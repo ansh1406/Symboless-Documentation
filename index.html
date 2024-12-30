@@ -1,0 +1,604 @@
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="favicon" href="logo.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-wrapper">
+            <div class="main-logo">
+                <img src="logo.png" alt="logo" />
+            </div>
+            <div class="headings-wrapper">
+                <div class="main-heading"><span>Symboless</span></div>
+                <div class="qoute">
+                    <h2>With syntax worse than python...</h2>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="content" id="content">
+        <div class="navigation-panel">
+            <ul class="content-list">
+                <li class="content-item"><a href="#introduction">Introduction</a></li>
+                <li class="content-item"><a href="#installation_guide"> Installation Guide</a></li>
+                <li class="content-item"><a href="#getting_started">Getting Started</a></li>
+                <li class="content-item"><a href="#syntax">Syntax</a></li>
+                <li class="content-item"><a href="#variables">Variables</a></li>
+                <li class="content-item"><a href="#data_types">Data Types</a></li>
+                <li class="content-item"><a href="#arrays">Arrays</a></li>
+                <li class="content-item"><a href="#input_output">Input Output</a></li>
+                <li class="content-item"><a href="#operators">Operators</a></li>
+                <li class="content-item"><a href="#chaining">Chaining</a></li>
+                <li class="content-item"><a href="#conditional_statements">Conditional Statements</a></li>
+                <li class="content-item"><a href="#loops">Loops</a></li>
+                <li class="content-item"><a href="#subroutine">Subroutines</a></li>
+                <li class="content-item"><a href="#header_file">Header File</a></li>
+                <li class="content-item"><a href="#message_from_developer">Message from developer</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+
+            <a name="introduction"></a>
+            <h3>Introduction</h3><br>
+            <span>Hello {developer.name} here!!!! Hope You're doing fine.</span><br>
+            <span>So let's get to the point. Symboless is a lightweight scripting language developed wwith <u>c++</u>
+                with no real world use case
+                yup you heard it right it dosen't have any use.</span><br>
+            <span>Huh! So why I made it well just for cracking SHA-256 I've developed it to crack secure hash algorithms
+                so that I can steal some of that juicy cryptocurrency out of your pockets (or maybe digital wallets).
+                Hope someone was not smart enough to actually believe it. Enough "Khayali pulaw" so to tell you the
+                truth it was developed just cuz I wanted to have some fun in my boring semester end break but I'd
+                definitely say the process of developing Symboless has really taught me many things about various
+                topics. (Yes it didn't teach me anything but you know I have to say it to make me look more
+                responsible).</span><br>
+            <span>So just do not take it seriously and skim through it (only if you want to) and maybe write one or two
+                programs and mail me so I can have some pride in it and acquire a little bit of happiness in my boring
+                single life.</span><br>
+            <span>Let's end this absolutely worthless talk and move on to the actual topic.</span><br>
+
+            <a name="installation_guide"></a>
+            <h3>Installation Guide</h3><br>
+
+            <span>To get started with Symboless just like any other language you'll have to install it on your computed
+                I'll leave the files somewhere in the footer (Cause I've already designed the header and I definitely
+                don't want to mess with it. I hate desigining why can't we use curl. *cry emoji* *cry emoli*)</span><br>
+
+            <span>Just download those files (They'll probabaly be in .zip format) and refer to the Installation guide
+                provided in the next topic.</span>
+
+            <span>And yes it's free and open source even though it's the result of decades of my pure dedication and
+                hardwork I'm providing the application for free and open source you can use it for making money if you
+                can (and maybe share some of it with me too)</span><br>
+
+            <span>I'll leave the link of github repo somewhere in the footer too.</span><br>
+            <span>You can follow below steps to install Symboless:</span><br>
+
+            <span>1- Download the Installation zip file and extract it. </span><br>
+            <span>2- Compile the <u>symls.cpp</u> file while including the path of dependencies folder in your linker
+                paths.</span><br>
+            <span>3- And voila! there you have it.</span><br>
+            <span>4- Symboless also comes with <u>symlsConfig.json</u> file you can configure I/O files, keywords,
+                operators etc.</span><br>
+            <span>5- <u>symlsConfig.json</u> should be included in the folder you'll store your Symobless files
+                otherwise it'll operate with default values.</span><br>
+
+
+            <a name="getting_started"></a>
+            <h3>Getting Started</h3><br>
+            <span>Symboless as you would've guessed is a complete CLI based application (I don't heve guts to develope a
+                UI. Even if I tried I'd most likely make it worse than CLI version).</span><br>
+
+            <span>So to get started open your cmd/powershell/bash whatever you have.</span><br>
+            <span>type the name of application you got after compiling <u>symls.cpp</u> and press enter.</span><br>
+
+            <span>Now you are currently running Symboless and can give any command and get out of it by giving
+                &quot;end&quot; command.</span><br>
+
+            <div class="code-block">
+                <lable>shell</lable>
+                <span>> symls &#9166;</span><br>
+                <span>print &quot;Hello World!&quot; &#9166;</span><br>
+                <span>Hello World!</span><br>
+                <span>end &#9166;</span><br>
+                <span>></span><br>
+            </div><br>
+
+            <span>Or you can save your script in a seperate file with <u>.symls</u> extension and provide it's name to
+                the application by command line arguments.</span><br>
+
+            <div class="code-block">
+                <lable>shell</lable>
+                <span>> symls file.symls &#9166;</span><br>
+                <span>Hello World!</span><br>
+                <span>></span><br>
+            </div><br>
+
+            <span>And voila! you just executed your first Symboless script.</span>
+
+            <a name="syntax"></a>
+            <h3>Syntax</h3><br>
+            <span>Syntax of Symboless consists of individual expressions (Ofcourse it's just my terminology you call
+                them whatever you want) seperated by line breaks or <u>and </u> keyword. So you can do something
+                like-</span><br>
+
+            <div class="code-block">
+                <lable>syntax.symls</lable>
+                <span>print "Hello "</span><br>
+                <span>print "World!"</span><br>
+                <span>end</span><br>
+            </div><br>
+
+            <span>or</span><br>
+
+            <div class="code-block">
+                <lable>syntax.symls</lable>
+                <span>print "Hello " and print "World!"</span><br>
+                <span>end</span><br>
+            </div><br>
+
+            <span>Both of them will produce same outcome.</span><br>
+
+            <span>And this chaining can be indefinitely long (Well it'll crash if the line got longer than maximum size
+                of c++ string container).</span><br>
+
+            <span>You can end the program with <u>end</u> keyword as stated in the examples.</span><br>
+
+            <a name="variables"></a>
+            <h3>Variables</h3><br>
+
+            <span>Yes!!! We have variables well I can't even imagine a programming language without the feature of
+                variables. And as you've already guessed they can store a single value of certain data type and can
+                change value throughout the program any number of times. In Symboless you can declare variables let
+                keyword followed by data type of variable followed by name of variable. </span><br>
+
+            <div class="code-block">
+                <lable>variable.symls</lable>
+                <span>let integer number</span><br>
+            </div><br>
+
+            <span>You can also initialize the variable with some initial value while declaring it.</span><br>
+
+            <span>In Symboless variable name can only consist 0-9, A-Z and a-z (No underscore) and it can not start with
+                a number.</span>
+
+            <div class="code-block">
+                <lable>variable.symls</lable>
+                <span>let integer number is 30</span><br>
+            </div><br>
+
+            <span>Variables can be of any three data type which Symboless support (Details in next section).</span><br>
+
+            <span>You can change thier value by assigining them with a new value like this.</span><br>
+
+            <div class="code-block">
+                <lable>variable.symls</lable>
+                <span>let integer number is 30</span><br>
+                <span>number is 50</span><br>
+            </div><br>
+
+            <span>In symboless variables don't have something luxurious like scope or life so to sum it up every
+                variable is global no matter where it's declared in main program, in subroutine, inside a if statements,
+                inside a loop anywhere every variable is global and can be accessed from anywhere in the program
+                throughout the whole execution.</span>
+
+            <a name="data_types"></a>
+            <h3>Data Types</h3><br>
+
+            <span>Symboless supports three data types:</span><br>
+            <span>1- Integer</span><br>
+            <span>2- Text</span><br>
+            <span>3- Real</span><br>
+
+            <span>Integer can store positive and negative integers and zero.</span><br>
+
+            <span>Text can store any string of characters.</span><br>
+
+            <span>Real can store floating point numbers.</span><br>
+
+            <span>You can initialize and assign them values like this.</span><br>
+
+            <div class="code-block">
+                <lable>data_types.symls</lable>
+                <span>let integer number is 30</span><br>
+                <span>let text name is "Symboless"</span><br>
+                <span>let real pi is 3.14</span><br>
+                <span>number is 50</span><br>
+                <span>name is "Hello"</span><br>
+                <span>pi is 6.28</span><br>
+            </div><br>
+
+            <a name="arrays"></a>
+            <h3>Arrays</h3><br>
+
+            <span>I won't bore with you what arrays are here's the syntax to declare them.</span><br>
+
+            <div class="code-block">
+                <lable>arrays.symls</lable>
+                <span>let integer-array numbers-5</span><br>
+                <span>let integer-array n2</span><br>
+            </div><br>
+
+            <span>You can choose to specify their size like first line otherwise Symboless will declare them with a
+                default size which is <u>64</u> by default and can be changed using <u>symlsConfig.json</u>
+                file.</span><br>
+
+            <span>You can access elements of an array like this.</span><br>
+
+            <div class="code-block">
+                <lable>arrays.symls</lable>
+                <span>let integer-array numbers-5</span><br>
+                <span>numbers-3 is 10</span><br>
+                <span>print numbers-3</span><br>
+            </div><br>
+
+            <span>By default every element of- integer array is <u>0</u>, text array is <u>&quot;&quot;</u> and real
+                array is <u>0.0</u> and yes this also can be changed in config file.</span><br>
+
+            <a name="input_output"></a>
+            <h3>Input Output</h3><br>
+
+            <span>You can take input using <u>read</u> keyword and print the output using <u>print</u>
+                keyword.</span><br>
+
+            <div class="code-block">
+                <lable>input_output.symls</lable>
+                <span>let text name</span><br>
+                <span>read name</span><br>
+                <span>print name</span><br>
+            </div><br>
+
+            <span>You can chain both print and read commands using then keyword.</span><br>
+
+            <div class="code-block">
+                <lable>input_output.symls</lable>
+                <span>let text name</span><br>
+                <span>let integer age</span><br>
+                <span>read name then age</span><br>
+                <span>print "Name: " then name then " Age: " then age then newline</span><br>
+            </div><br>
+
+            <span>You can use <u>newline</u> keyword with print to move to next line (Also customizable using
+                configuration file).</span><br>
+
+            <a name="operators"></a>
+            <h3>Operators</h3><br>
+
+            <span>There are two types of operators in Symboless Mathamatical and Logical(not you old AND, OR, NOT but
+                comparison one's yes I'm calling them logical operator cause they are like they are way more fundamental
+                in terms of logic if I say something is equal to something didn't I determine by some logic).
+            </span><br>
+
+            <span>And also every single operator in Symboless can be configured via configuration file.</span><br>
+
+            <table class="operator-table">
+                <thead>
+                    <th>OPERATOR</th>
+                    <th>FUNCTION</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>plus</td>
+                        <td>Add two integeres,reals or strings</td>
+                    </tr>
+                    <tr>
+                        <td>minus</td>
+                        <td>Subtract two integeres or reals</td>
+                    </tr>
+                    <tr>
+                        <td>into</td>
+                        <td>Multiply two integeres or reals</td>
+                    </tr>
+                    <tr>
+                        <td>upon</td>
+                        <td>Divide two integeres or reals</td>
+                    </tr>
+                    <tr>
+                        <td>modulo</td>
+                        <td>Modulus of two integeres or reals</td>
+                    </tr>
+                    <tr>
+                        <td>exponent</td>
+                        <td>Calculate exponent of integers and reals</td>
+                    </tr>
+                    <tr>
+                        <td>greater-than</td>
+                        <td>Greater than comparison</td>
+                    </tr>
+                    <tr>
+                        <td>less-than</td>
+                        <td>Less than comparison</td>
+                    </tr>
+                    <tr>
+                        <td>equal-to</td>
+                        <td>Equal comparison</td>
+                    </tr>
+                    <tr>
+                        <td>not-equal-to</td>
+                        <td>Not equal comparison</td>
+                    </tr>
+                </tbody>
+            </table><br>
+
+            <span>Yes we have modulo function for real numbers too!!!</span><br>
+
+            <span>All of these operators can be used like shown below.</span><br>
+
+            <div class="code-block">
+                <lable>operators.symls</lable>
+                <span>let integer a is 10</span><br>
+                <span>let integer b is 20</span><br>
+                <span>let integer c</span><br>
+                <span>c is a plus b</span><br>
+                <span>c is a minus b</span><br>
+                <span>c is a into b</span><br>
+                <span>c is a upon b</span><br>
+                <span>c is a modulo b</span><br>
+                <span>c is a exponent b</span><br>
+                <span>if a is greater-than b then skip else stop</span><br>
+                <span>if a is less-than b then skip else stop</span><br>
+                <span>if a is equal-to b then skip else stop</span><br>
+                <span>if a is not-equal-to b then skip else stop</span><br>
+            </div><br>
+
+            <span>No no no!!! No need to panic I'll tell more about if, then, else, skip and stop later on in branching
+                section just bear with me till then.</span><br>
+
+            <span>There is no operator precedence all operators are equally prioritized and the order of execution is
+                right to left meaning <u>10 into 20 plus 5</u> will be equal to <u>250</u> and not <u>205</u>.
+            </span><br>
+
+            <span>Logical operators can only be used for conditional statements inside <u>if</u> or <u>while</u>
+                expressions.</span><br>
+
+            <span>Mathamatical operators can only be used in conditional statements or in assignment expressions
+                (including initialization) you can not do something like.</span><br>
+
+            <div class="code-block">
+                <lable>operators.symls</lable>
+                <span>print a plus b</span><br>
+                <span>a is b less-than d</span><br>
+            </div><br>
+
+            <span>The above snippet will throw an error.</span><br>
+
+            <a name="chaining"></a>
+            <h3>Chaining</h3><br>
+
+            <span>Since Symboless is an interpreted language it dosen't know what's written after the line it's
+                currently executing so if want it to read the next statement beforehand you can chain multiple
+                statements together.</span><br>
+
+            <div class="code-block">
+                <lable>chaining.symls</lable>
+                <span>let integer a is 10 and let integer b is 20 and let integer c is a plus b</span><br>
+            </div><br>
+
+            <span>You can also give a line break after and keyword Symboless will understand it and treat them as one
+                single statement (and you need not to care about indentation since we are not python, our syntax may be
+                worse than python but we don't declare your code invalid just because of an extra or less
+                space).</span><br>
+
+            <div class="code-block">
+                <lable>chaining.symls</lable>
+                <span>let integer a is 10 and</span><br>
+                <span>let integer b is 20 and</span><br>
+                <span>let integer c is a plus b</span><br>
+            </div><br>
+
+            <span>Chaining is an essential part of Symboless as it make it possible to have multiple statements inside
+                <u>if</u> and <u>while</u> statements.</span><br>
+
+            <a name="conditional_statements"></a>
+            <h3>Conditional Statements</h3><br>
+
+            <span>Symboless have only one conditional statement <u>if then else stop</u> expression. </span>
+
+            <span>The condition will go between <u>if</u> and <u>then</u> keywords and if the condition is true the
+                expression between <u>then</u> and <u>else</u> will execute and in case of false the expression between
+                <u>else</u> and <u>stop</u> will execute.</span><br>
+
+            <div class="code-block">
+                <lable>conditional_statements.symls</lable>
+                <span>let integer a</span><br>
+                <span>let integer b</span><br>
+                <span>read a then b</span><br>
+                <span>if a is greater-than b then print a else print b stop</span><br>
+            </div><br>
+
+            <span>If you want to execute multiple statements in any case you must chain them with <u>and</u>
+                keyword</span><br>
+
+            <span>You can add line breaks after <u>then</u> and <u>else</u> keywords and Symboless will treat them as a
+                single expression.</span><br>
+
+            <div class="code-block">
+                <lable>conditional_statements.symls</lable>
+                <span>let integer a</span><br>
+                <span>let integer b</span><br>
+                <span>read a then b</span><br>
+                <span>if a is greater-than b then</span><br>
+                <span>print a else</span><br>
+                <span>print b stop</span><br>
+            </div><br>
+
+            <span>Each <u>if</u> must be conjugated with <u>else</u> you can not have any <u>if</u> alone </span><br>
+
+            <span>If you want to do nothing in case of condition is true or false you can use <u>skip</u> keyword after
+                <u>then</u> or <u>else</u> respectively or you can even leave it empty (well adding an extra skip will
+                make reading the code easier).</span><br>
+
+            <a name="loops"></a>
+            <h3>Loops</h3><br>
+
+            <span>Symboless have only one loop the <u>while do till-here</u> loop and well I think all other types of
+                loop provided in other languages are just extras while is the only thing you ever need (only if you're a
+                good programmer of course).</span><br>
+
+            <span>The condition is provided between <u>while</u> and <u>do</u> keywords and statements are provided
+                between <u>do</u> and <u>till-here</u> keywords.</span><br>
+
+            <span>You can use <u>recheck</u> keyword to recheck the condition at any point and restart the loop from the
+                beginning (yes it's continue I just didn't wanna use same term).</span><br>
+
+            <span>You can use <u>escape</u> keyword to break out of the loop at any point.</span><br>
+
+            <div class="code-block">
+                <lable>loops.symls</lable>
+                <span>let integer a is 0</span><br>
+                <span>while a is less-than 10 do</span><br>
+                <span>print a then newline and</span><br>
+                <span>a is a plus 1 till-here</span><br>
+            </div><br>
+
+            <span>Just like after <u>then</u> and <u>else</u> you can also insert line break after <u>do</u>
+                keyword.</span><br>
+
+            <span>And just like <u>if</u> you can chain multiple statements inside <u>while</u> statement.</span><br>
+
+            <a name="subroutine"></a>
+            <h3>Subroutines</h3><br>
+
+            <span>Subroutines are reusable blocks of code in Symboless you can call any subroutine using <u>goto</u>
+                keyword.</span><br>
+
+            <span>In symboless subroutines must be declared only after the main code has ended.</span><br>
+
+            <span>a subroutine starts with <u>subroutine</u> keyword followed by it's name and ends with <u>end</u>
+                keyword.</span><br>
+
+            <div class="code-block">
+                <lable>subroutine.symls</lable>
+                <span>goto printHello</span><br>
+                <span>end</span><br>
+                <span>subroutine printHello</span><br>
+                <span>print "Hello World!"</span><br>
+                <span>end</span><br>
+            </div><br>
+
+            <span>Since Symboless don't have scopes subroutines can access all variables declared anywhere in the code
+                and main code can also access variables declared inside any subroutine that has already been
+                called.</span><br>
+
+            <span>You can break out of a subroutine by using <u>esacape</u> keyword.</span><br>
+
+            <div class="code-block">
+                <lable>subroutine.symls</lable>
+                <span>let integer a is 10</span><br>
+                <span>let integer b is 20</span><br>
+                <span>goto sum</span><br>
+                <span>print "Sum: " then sum</span><br>
+                <span>end</span><br><br>
+                <span>subroutine sum</span><br>
+                <span>integer sum is a plus b</span><br>
+                <span>end</span><br>
+            </div><br>
+
+            <span>That extra empty line after the ending of main program is just for the asthetics.</span><br>
+
+            <a name="header_file"></a>
+            <h3>Header File</h3><br>
+
+            <span>I have also made a c++ class for Symboless which you can access by including the header file provied
+                in <u>includes</u> folder in the installation.</span><br>
+
+            <span>It have <u>Symboless</u> class under <u>symboless</u> namespace</span><br>
+
+            <span>The constructor accepts 3 parameter the Symboless code, a string in which all the inputs which'll be
+                required while execution are provided and a string in which the output will be returned</span><br>
+
+            <div class="code-block">
+                <lable>header_file.cpp</lable>
+                <span>#include "symls.hpp"</span><br>
+                <span>#include &lt;iostream&gt;</span><br>
+                <span>int main(){</span><br>
+                <span>std::string code = "let integer a and read a and let integer b and read b and let integer c is a
+                    plus b and print c and end";</span><br>
+                <span>std::string inputs = "3\n5";</span><br>
+                <span>std::string output = "";</span><br>
+                <span>symboless::Symboless s(code, inputs, output);</span><br>
+                <span>std::cout &lt;&lt; output &lt;&lt; std::endl;</span><br>
+                <span>return 0;</span><br>
+                <span>}</span><br>
+            </div><br>
+
+            <a name="message_from_developer"></a>
+            <h3>Message from developer</h3><br>
+
+            <span>Well that took ages to type hope you didn't tldr (most likely you did). Well that doesn't matter
+                believe me or not I really had fun typing all this sitting lonely on a single chair for hours.
+            </span><br>
+
+            <span>So what I wanna say is if you have some spare time just install it make one or two little programs or
+                maybe play with configurations and send me some screenshots on my email if you want to make my
+                day......... peace.</span><br>
+        </div>
+    </div>
+    <div class="footer">
+        <nav class="footer-links">
+            <a href="https://github.com/ansh1406/Symboless">Github</a>
+            <a id="open_downloads">Downloads</a>
+            <a id="open_contact">Contact</a>
+            <a id="open_examples">Examples</a>
+            <a id="open_keywords">Keywords</a>
+        </nav>
+    </div>
+
+    <div class="downloads" id="downloads">
+        <button><a href="Downloads/symls.zip" download>symls.zip</a></button>
+    </div>
+
+    <div class="contact" id="contact">
+        <span>E-mail: </span>
+        <a href="mailto:anshswaroop14@gmail.com">anshswaroop14@gmail.com</a>
+    </div>
+
+    <div class="examples" id="examples">
+        <ul>
+            <li><a href="Examples/sum.symls">sum.symls</a></li>
+            <li><a href="Examples/greatest.symls">greatest.symls</a></li>
+            <li><a href="Examples/calculator.symls">calculator.symls</a></li>
+            <li><a href="Examples/tic_tac_toe.symls">tic_tac_toe.symls</a></li>
+            <li><a href="Examples/square_root.symls">square_root.symls</a></li>
+            <li><a href="Examples/selection_sort.symls">selection_sort.symls</a></li>
+            <li><a href="Examples/linear_search.symls">linear_search.symls</a></li>
+            <li><a href="Examples/watermelon_problem.cpp">watermelon_problem.cpp</a></li>
+        </ul>
+    </div>
+
+    <div class="keywords" id="keywords">
+        <br>
+        <span>let: To initiate a variable.</span><br>
+        <span>is: To assign value to a variable. || In conditional statements.</span>
+        <span>read: To take input from user.</span><br>
+        <span>print: To print output to user.</span><br>
+        <span>and: To chain multiple statements.</span><br>
+        <span>then: To chain printing and reading statements. || To give expressions which will execute in case of condition is true in branching statements.</span><br>
+        <span>if: Starting of branching statement.</span><br>
+        <span>else: To give expressions which will execute in case of condition is false in branching statements.</span><br>
+        <span>stop: Ending of branching statement.</span><br>
+        <span>skip: To skip the expression in branching statement.</span><br>
+        <span>while: Starting of loop.</span><br>
+        <span>do: To give expressions which will execute in loop.</span><br>
+        <span>till-here: Ending of loop.</span><br>
+        <span>recheck: To recheck the condition of loop.</span><br>
+        <span>escape: To break out of loop. || To break out of a subroutine.</span><br>
+        <span>goto: To call a subroutine.</span><br>
+        <span>subroutine: Starting of subroutine.</span><br>
+        <span>end: Ending of subroutine. || Ending of main program.</span><br>
+        <span>newline: To move to next line while printing.</span><br>
+        <span>leave: To leave that line while interpreting (comment).</span>
+        <br>
+    </div>
+</body>
+
+</html>

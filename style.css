@@ -1,0 +1,322 @@
+:root{
+    --main-color:#0d4e1b;
+    --secondary-color:#000;
+
+    --content-font-color:#00ff00;
+    --alternate-content-font-color:#0000ff;
+
+    --head-font-size:4rem;
+    --secondary-font-size:2rem;
+
+    --footer-background:#ffffff;
+    --header-background:#fff;
+}
+
+html{
+    scrollbar-width:none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    scrollbar-width: none;
+    margin:0;
+}
+
+
+
+.header{
+    display:flex;
+    flex-direction: column;
+    height: 14vh;
+    width: 100%;
+    background-color: var(--header-background);
+    position:absolute;
+    top:1vh;
+    left:0px;
+}
+.header-wrapper{
+    display:flex;
+    justify-content: space-between;
+    position:fixed;
+    width: 100%;
+    height: 14vh;
+}
+
+.headings-wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+}
+
+.main-heading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color : var(--main-color);
+    width:100%;
+    height:30%;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.main-logo{
+    width:64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:10px;
+}
+
+.main-logo img{
+    width:64px;
+    aspect-ratio: 1/1;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+
+.main-heading span{
+    font-size: var(--head-font-size);
+    letter-spacing: 1vw;
+    font-family : 'special elite', cursive;
+    font-weight: bolder;
+    margin: none;
+}
+
+.qoute h2 {
+    font-size: var(--secondary-font-size);
+    font-family : 'special elite', cursive;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
+
+.content{
+    display:flex;
+    width:100%;
+    height: 75vh;
+    background-color: var(--secondary-color) ;
+    z-index: 20;
+    position:absolute;
+    top:16vh;
+    left:0;
+}
+
+.navigation-panel{
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    font-family:'Special Elite', cursive;
+    color : var(--content-font-color);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    overflow-x: scroll;
+}
+
+.content-list{
+    list-style: none;
+    padding: 5px;
+
+}
+
+.content-item{
+    margin-bottom:20px;
+}
+.content-item a{
+    text-decoration: none;
+    color:inherit;
+}
+
+
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    width: 100%;
+    border: none;
+    border-left: solid var(--content-font-color) 1px;
+    border-top:solid var(--content-font-color) 1px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    color:var(--content-font-color);
+}
+
+.main-content h3 {
+    margin:none;
+    padding-top : 10px;
+    font-size: 2rem;
+    font-family: 'Special Elite', cursive;
+    color:var(--alternate-content-font-color);
+    text-align: center;
+    margin: 0;
+}
+
+.main-content span{
+    font-size: 1 rem;
+    font-family: 'Special Elite', cursive;
+    text-align: justify;
+    padding-top:5px;
+    padding-left: 10px;
+    padding-right:20px;
+    margin:none;
+    line-height: 1.5;
+}
+
+
+.code-block{
+    width:60vw;
+    border:10px groove #c9c;
+    align-self:center;
+    color:var(--alternate-content-font-color);
+}
+
+.code-block span{
+    margin-left:5px;
+}
+
+.code-block lable{
+    font-size:0.7em;
+    color:#666;
+    display: block;
+    width:100%;
+    text-align: end;
+}
+
+.operator-table{
+    border:1px solid white;
+    color:var(--alternate-content-font-color);
+    border-collapse: collapse;
+    align-self: center;
+    width: 60vw;
+}
+
+.operator-table th, td{
+    border:1px solid white;
+}
+
+.operator-table tr :first-child{
+    text-align: center;
+}
+
+
+.footer{
+    background-color: var(--footer-background);
+    border: solid black 1px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin:0px;
+    width:100%;
+    height: 9vh;
+}
+
+.footer-links{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    height: 100%;
+    width: 100%;
+
+}
+
+.footer-links a{
+    text-decoration: none;
+    color:var(--secondary-color);
+    margin-right:10px;
+}
+
+.downloads , .contact, .examples, .keywords{
+    position:absolute;
+    top:40vh;
+    left:20vw;
+    display:none;
+    justify-content: space-evenly;
+    align-items: center;
+    scrollbar-width: none;
+    height: 20vh;
+    width: 60vw;
+    border: groove 10px black;
+    z-index:10;
+}
+
+.downloads button{
+    width: 40%;
+    height: 40%;
+    font-size: 1rem;
+    font-family: 'Special Elite', cursive;
+    border: solid 5px #00000022;
+    border-radius: 10px;
+}
+
+.downloads button:hover{
+    background-color: #00000077;
+}
+
+.downloads a , .contact a , .examples a{
+    text-decoration: none;
+}
+
+.examples , .keywords{
+    top:20vh;
+    height: 60vh;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.examples ul{
+    padding: 0;
+}
+.examples li{
+    margin-bottom: 10px;
+}
+
+.keywords{
+    align-items: flex-start;
+    justify-content: left;
+    flex-direction: column;
+}
+.keywords span{
+    margin-left:5px;
+}
+
+
+@media (max-width: 560px){
+    :root{
+        --head-font-size:3rem;
+        --secondary-font-size:1rem;
+    }
+
+    .code-block{
+        width:45vw;
+    }
+}
+
+@media (max-height: 560px){
+    :root{
+        --head-font-size:3rem;
+        --secondary-font-size:1rem;
+    }
+}
+
+@media (max-width: 350px){
+    :root{
+        --head-font-size:2rem;
+        --secondary-font-size:0.8rem;
+    }
+
+}
